@@ -1,0 +1,131 @@
+/* Jacob Reynolds 7/21 /24 */
+/* Ch10 Project CSS */
+
+* { box-sizing: border-box; }
+
+body {  background-color: #0194b5;
+        background-image: linear-gradient(to
+        bottom, #FFFFFF, #0194b5);
+        background-repeat: no-repeat;
+	  color: #555555; 
+        font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper { background-color: #FFFFFF;
+           padding: 2em;
+           margin-left: auto; margin-right: auto;
+           width: 80%;
+           min-width: 960px;
+           max-width: 2048px;
+           box-shadow: 3px 3px #333333;
+           border-width: 1px;
+           border-style: solid;
+           border-color: #000033;
+       }
+
+header { height: 120px;
+         background-color: #29485d;
+         color: #FFFFFF;
+         background-image: url(logo.png);
+         background-position: right;
+         background-repeat: no-repeat;
+         text-align: left;
+         padding-top: 30px;
+}
+header a { text-decoration: none;
+           color: white;}
+header :link{text-decoration: none;
+             text-color: white;}
+header :visited{  text-color: white;}
+header :hover{ text-color: #c6d02f;}
+
+nav { background-color: #FFFFFF;
+      font-weight: bold;
+      text-align: center;
+      padding: 1.5em;
+      font-size: 120%; }
+
+nav ul { list-style: none;
+         margin: 0;
+         font-size: 1.2em; }
+          
+nav li { display: inline;
+         padding: 1em;}
+
+nav a {text-decoration: none;}
+nav a:link { color: #0194b5;}
+          
+nav a:visited { color: #29485d;}
+          
+nav a:hover { color: #c6d02f;}
+
+main { background-color: white; 
+       padding: 1px 20px 20px;
+       display: block;
+       overflow: auto; }
+
+h1  { margin-bottom: 0;  
+      margin-top: 0;
+      margin-right: 35%;
+      margin-left: 3em;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2em;
+      letter-spacing: 0.2em;}
+
+h2  { color: #407386; 
+      font-family: Georgia, "Times New Roman", serif;
+      text-shadow: 1px 1px #CCCCCC;
+      text-align: center; }
+
+section {float: left;
+         width: 25%;
+         padding-left: 2em;
+         padding-right: 2em;}
+
+main img {float: right;}
+
+h3 { color: #29485d;
+     font-family: Georgia, "Times New Roman", serif; }
+
+main ul { list-style-image: url(marker.gif);}
+li { line-height: 1.5;}
+dt  { color: #0194b5; }
+footer { font-size: 75%;
+         font-style: italic;
+         text-align: center;
+         font-family: Georgia, "Times New Roman", serif; 
+         padding: 2em;}
+.web { color: #0194b5; 
+       font-weight: bold; }
+
+#contact { font-size: 90%; }
+
+/* Grid layout for form */
+form { display: grid;
+       grid-template-rows: auto;
+       grid-template-columns: 6em 1fr;
+       gap: 1em;
+       width: 60%;
+       max-width: 30em;
+       padding: 2em;
+       
+  }
+  
+  /* Label elements in the first column */
+  form label {
+      grid-column: 1;
+      display: block;
+  }
+  
+  /* Input and select elements in the second column */
+  form input,
+  form select {
+      grid-column: 2;
+      margin-bottom: 0.5em;
+  }
+  
+  /* Attribute selector for submit button */
+  [type="submit"] {
+      grid-column: 2;
+      width: 10em;
+  }
+
