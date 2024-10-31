@@ -1,1 +1,1 @@
-You can view the live page [here](https://Jakeofmosttrades.github.io/projects/Finalp1.html).
+You can view the live page [here](https://jakeofmosttrades.github.io/projects/Chess/Finalp1.html).
